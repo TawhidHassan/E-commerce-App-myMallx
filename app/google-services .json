@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "612977541929",
+    "firebase_url": "https://my-mallx-3ddfe.firebaseio.com",
+    "project_id": "my-mallx-3ddfe",
+    "storage_bucket": "my-mallx-3ddfe.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:612977541929:android:4b24ebd6a573386fc46d38",
+        "android_client_info": {
+          "package_name": "com.example.mymallx"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "612977541929-eblnnmpupt9v6k384mp1kknu6rgpqtpp.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.mymallx",
+            "certificate_hash": "f1e738f9658f5d4d52314c9d43f4c15c608a5d24"
+          }
+        },
+        {
+          "client_id": "612977541929-hs4ol1b80vh5eo2elop6icmpi3oeh29k.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDhu5NJCciu8m6-eiiUw9BrV1kOfXCJZG0"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "612977541929-hs4ol1b80vh5eo2elop6icmpi3oeh29k.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

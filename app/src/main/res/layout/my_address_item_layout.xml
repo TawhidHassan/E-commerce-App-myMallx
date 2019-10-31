@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:padding="12dp"
+    android:layout_marginTop="16dp"
+    android:background="@color/colorAccent"
+    android:foreground="?attr/selectableItemBackground"
+    android:elevation="6dp"
+    >
+
+    <TextView
+        android:id="@+id/my_address_fullNam_id"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="16dp"
+        android:text="full Name"
+        android:textColor="@color/black"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toStartOf="@+id/my_address_checkIcon_id"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/my_address_fullAddress_id"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:text="Full Address"
+        android:textColor="@color/black"
+        android:textSize="15sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toStartOf="@+id/my_address_checkIcon_id"
+        app:layout_constraintStart_toStartOf="@+id/my_address_fullNam_id"
+        app:layout_constraintTop_toBottomOf="@+id/my_address_fullNam_id" />
+
+    <TextView
+        android:id="@+id/my_address_pincode_id"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:text="Pine Code"
+        android:textSize="15sp"
+        android:textStyle="bold"
+        android:textColor="@color/black"
+        app:layout_constraintStart_toStartOf="@+id/my_address_fullAddress_id"
+        app:layout_constraintTop_toBottomOf="@+id/my_address_fullAddress_id" />
+
+    <ImageView
+        android:id="@+id/my_address_checkIcon_id"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="4dp"
+        android:src="@mipmap/tik"
+        android:padding="10dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+         />
+
+
+    <LinearLayout
+        android:id="@+id/my_address_Btn_id"
+        android:layout_width="60dp"
+        android:layout_height="50dp"
+        android:background="@drawable/slider_background"
+        android:backgroundTint="@color/gree"
+        android:elevation="3dp"
+        android:orientation="vertical"
+        android:padding="4dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toEndOf="@+id/my_address_fullAddress_id"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.666"
+        android:visibility="gone"
+          >
+
+        <TextView
+            android:id="@+id/my_address_editeBtn_id"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Edite"
+            android:textAlignment="center"
+            android:textColor="@color/black"
+            android:textStyle="bold"
+            />
+        <View
+            android:id="@+id/divider14"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="?android:attr/listDivider"
+           />
+        <TextView
+            android:id="@+id/my_address_removeBtn_id"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Remove"
+            android:textAlignment="center"
+            android:textColor="@color/black"
+            android:textStyle="bold"
+            />
+
+
+    </LinearLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

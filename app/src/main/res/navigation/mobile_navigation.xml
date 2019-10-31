@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mobile_navigation"
+    app:startDestination="@+id/nav_my_mall">
+
+    <fragment
+        android:id="@+id/nav_my_mall"
+        android:name="com.example.mymallx.ui.home.HomeFragment"
+        android:label="@string/menu_home"
+        tools:layout="@layout/fragment_home" >
+        <action
+            android:id="@+id/action_nav_my_mall_to_nav_my_cart"
+            app:destination="@id/nav_my_cart" />
+        <action
+            android:id="@+id/action_nav_my_mall_to_myOrderFragment"
+            app:destination="@id/nav_my_order" />
+        <action
+            android:id="@+id/action_nav_my_mall_to_orderDetailsFragment"
+            app:destination="@id/nav_my_account" />
+        <action
+            android:id="@+id/action_nav_my_mall_to_myWishListFragment"
+            app:destination="@id/nav_my_wishlist" />
+        <action
+            android:id="@+id/action_nav_my_mall_to_myRewardFragment"
+            app:destination="@id/nav_my_rewards" />
+        <action
+            android:id="@+id/action_nav_my_mall_to_myAccountFragment"
+            app:destination="@id/nav_my_account" />
+    </fragment>
+    <fragment
+        android:id="@+id/nav_my_cart"
+        android:name="com.example.mymallx.MyCartFragment"
+        android:label="MY Cart"
+        tools:layout="@layout/fragment_my_cart" />
+    <fragment
+        android:id="@+id/nav_my_order"
+        android:name="com.example.mymallx.MyOrderFragment"
+        android:label="fragment_my_order"
+        tools:layout="@layout/fragment_my_order" />
+    <fragment
+        android:id="@+id/nav_my_wishlist"
+        android:name="com.example.mymallx.MyWishListFragment"
+        android:label="fragment_my_wish_list"
+        tools:layout="@layout/fragment_my_wish_list" />
+    <fragment
+        android:id="@+id/nav_my_rewards"
+        android:name="com.example.mymallx.MyRewardFragment"
+        android:label="fragment_my_reward"
+        tools:layout="@layout/fragment_my_reward" />
+    <fragment
+        android:id="@+id/nav_my_account"
+        android:name="com.example.mymallx.MyAccountFragment"
+        android:label="fragment_my_account"
+        tools:layout="@layout/fragment_my_account" />
+
+
+</navigation>

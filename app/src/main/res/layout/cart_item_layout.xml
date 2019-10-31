@@ -1,0 +1,193 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/colorAccent"
+    android:elevation="10dp"
+    android:layout_marginTop="10dp"
+    android:orientation="vertical">
+
+    <ImageView
+        android:id="@+id/productImagId"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@mipmap/mobile" />
+
+    <ImageView
+        android:id="@+id/freeCuponIconId"
+        android:layout_width="15dp"
+        android:layout_height="15dp"
+        android:backgroundTint="#861BFF"
+        app:layout_constraintStart_toStartOf="@+id/productTitleId"
+        app:layout_constraintTop_toBottomOf="@+id/productTitleId"
+        app:srcCompat="@mipmap/coupen" />
+
+    <LinearLayout
+
+        android:id="@+id/coupenRedemLayoutId"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:background="#FF432D"
+        android:gravity="right"
+
+        android:orientation="horizontal"
+        android:padding="16dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/productQuntityTextId">
+
+        <Button
+            android:id="@+id/cupenReemptionBtnId"
+            android:layout_width="75dp"
+            android:layout_height="30dp"
+            android:background="@drawable/border_background"
+            android:text="Redeem"
+            android:textColor="@color/colorAccent"
+            android:textSize="20sp"
+
+            />
+
+        <TextView
+            android:id="@+id/cupenReemptionTextId"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Check Price after Coupen redemption"
+            android:textAlignment="center"
+            android:textColor="@color/colorAccent" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/removeItemBtnId"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:orientation="horizontal"
+        android:padding="10dp"
+        android:background="#DFDBDB"
+        android:elevation="8dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/coupenRedemLayoutId">
+
+        <ImageView
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:src="@mipmap/bin" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Remove item"
+            android:textColor="#000000" />
+
+
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/productTitleId"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:text="Pixel 2 Black"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="@+id/productImagId"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toEndOf="@+id/productImagId"
+        app:layout_constraintTop_toTopOf="@+id/productImagId"
+        app:layout_constraintVertical_bias="0.383" />
+
+    <TextView
+        android:id="@+id/textViewFreeCoupenId"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Free To Coupons"
+        android:textColor="#861BFF"
+        android:textSize="13sp"
+        app:layout_constraintBottom_toBottomOf="@+id/freeCuponIconId"
+        app:layout_constraintStart_toEndOf="@+id/freeCuponIconId"
+        app:layout_constraintTop_toTopOf="@+id/freeCuponIconId" />
+
+    <TextView
+        android:id="@+id/prioductPriceId"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="16dp"
+        android:text="Rs.4888/-"
+        android:textColor="#000000"
+        android:textSize="22sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="@+id/textViewFreeCoupenId"
+        app:layout_constraintTop_toBottomOf="@+id/textViewFreeCoupenId" />
+
+    <TextView
+        android:id="@+id/produCtcutedPriceId"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="8dp"
+        android:text="Rs.99999/-"
+        app:layout_constraintBottom_toBottomOf="@+id/prioductPriceId"
+        app:layout_constraintEnd_toStartOf="@+id/prioductPriceId" />
+
+    <TextView
+        android:id="@+id/offerAppliedId"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:text="Offer Applied"
+        android:textColor="@color/green"
+        android:textSize="12sp"
+        app:layout_constraintEnd_toEndOf="@+id/prioductPriceId"
+        app:layout_constraintTop_toBottomOf="@+id/prioductPriceId" />
+
+    <TextView
+        android:id="@+id/coupenApplidId21"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Coupen Applied"
+        android:textColor="@color/colorPrimary"
+        android:textSize="12sp"
+        app:layout_constraintEnd_toEndOf="@+id/offerAppliedId"
+        app:layout_constraintTop_toBottomOf="@+id/offerAppliedId" />
+
+    <TextView
+        android:id="@+id/productQuntityTextId"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="8dp"
+        android:background="@drawable/border_background"
+        android:backgroundTint="#000000"
+        android:drawableEnd="@mipmap/drop_down_arrow"
+        android:drawablePadding="8dp"
+        android:padding="3dp"
+        android:text="Qt: 1"
+        android:textColor="#000000"
+        app:layout_constraintBottom_toBottomOf="@+id/coupenApplidId21"
+        app:layout_constraintStart_toEndOf="@+id/productImagId"
+        app:layout_constraintTop_toBottomOf="@+id/cutedPriceCutedDeviderId" />
+
+    <View
+        android:id="@+id/cutedPriceCutedDeviderId"
+        android:layout_width="0dp"
+        android:layout_height="1dp"
+        android:background="?android:attr/listDivider"
+        app:layout_constraintBottom_toBottomOf="@+id/produCtcutedPriceId"
+        app:layout_constraintEnd_toEndOf="@+id/produCtcutedPriceId"
+        app:layout_constraintStart_toStartOf="@+id/produCtcutedPriceId"
+        app:layout_constraintTop_toTopOf="@+id/produCtcutedPriceId" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
